@@ -1,0 +1,29 @@
+Start Icon Code-------
+
+
+
+
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Start Icon Code &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+play_icon = PhotoImage(file = 'icon/play.png')
+stop_icon = PhotoImage(file = 'icon/stop.png')
+pause_icon = PhotoImage(file = 'icon/pause.png')
+openfile_icon = PhotoImage(file = 'icon/file.png')
+openfolder_icon = PhotoImage(file = 'icon/folder.png')
+exit_icon = PhotoImage(file = 'icon/exit.png')
+increase_volume_icon = PhotoImage(file = 'icon/increase_volume.png')
+decrease_volume_icon = PhotoImage(file = 'icon/decrease_volume.png')
+mute_icon = PhotoImage(file = 'icon/mute.png')
+playlist_icon = PhotoImage(file = 'icon/playlist.png')
+about_us_icon = PhotoImage(file = 'icon/about_us.png')
+music_player_icon = PhotoImage(file = 'icon/SC Media Player Resized.png')
+main_frame_music_icon = PhotoImage(file = 'icon/main_frame_music.png')
+volume_icon = PhotoImage(file = 'icon/volume.png')
+mute_resize_icon = PhotoImage(file = 'icon/mute_resize.png')
+plus_icon = PhotoImage(file = 'icon/plus.png')
+forward_icon = PhotoImage(file = 'icon/forward.png')
+backward_icon = PhotoImage(file = 'icon/backward.png')
+next_song_icon = PhotoImage(file = 'icon/next_song.png')
+previous_song_icon = PhotoImage(file = 'icon/previous_song.png')
+
+#----------------------------- End Icon Code --------------------------------
