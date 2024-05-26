@@ -56,8 +56,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Credits
 - Developed by Amrin Shaikh
-
 -  Icons sourced from [iconfinder.com](https://www.iconfinder.com/)
--  
+
+  
 ## Contact
 For any inquiries or feedback, please create a GitHub issue or contact us through commits.
