@@ -1,0 +1,17 @@
+def on_closing():
+    global stop_var
+    stop_var = False
+    stopmusic()
+    main_application.destroy()
+
+# Protocol to handle window closing event
+main_application.protocol("WM_DELETE_WINDOW", on_closing)
+
+#  shortcut keys for file operations
+main_application.bind("<Control-o>", browse_file)         
+main_application.bind("<Control-Shift-o>", multiple_files)
+main_application.bind("<Control-f>", open_folder)          
+main_application.bind("<Control-q>", exit_command)        
+
+# Start the main event loop
+main_application.mainloop()
