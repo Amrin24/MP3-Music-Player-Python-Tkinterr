@@ -1,0 +1,35 @@
+#&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Start Menu Bar Code &&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+main_menu = Menu()
+
+media_menu = Menu(main_menu, tearoff = False)
+audio_menu = Menu(main_menu, tearoff = False)
+view_menu = Menu(main_menu, tearoff = False)
+help_menu = Menu(main_menu, tearoff = False)
+
+main_menu.add_cascade(label = 'Media', menu = media_menu)
+main_menu.add_cascade(label = 'Audio', menu = audio_menu)
+main_menu.add_cascade(label = 'View', menu = view_menu)
+main_menu.add_cascade(label = 'Help', menu = help_menu)
+
+media_menu.add_command(label = 'Open File', image = openfile_icon, compound = LEFT, accelerator = 'Ctrl + O', command = browse_file)
+media_menu.add_command(label = 'Multiple Files', image = openfile_icon, compound = LEFT, accelerator = 'Ctrl + Shift + O', command = multiple_files)
+media_menu.add_separator()
+media_menu.add_command(label = 'Open Folder', image = openfolder_icon, compound = LEFT, accelerator = 'Ctrl + F', command = open_folder)
+media_menu.add_separator()
+media_menu.add_command(label = 'Exit', image = exit_icon, compound = LEFT, accelerator = 'Ctrl + Q', command = exit_command)
+
+audio_menu.add_command(label = 'Increase Volume', image = increase_volume_icon, compound = LEFT, command = increase_volume)
+audio_menu.add_command(label = 'Decrease Volume', image = decrease_volume_icon, compound = LEFT, command = decrease_volume)
+audio_menu.add_command(label = 'Mute', image = mute_icon, compound = LEFT, command = mute)
+
+view_menu.add_checkbutton(label = 'Playlist', onvalue = True, offvalue = False, variable = playlist_var, image = playlist_icon, compound = LEFT, command = playlist)
+view_menu.add_separator()
+view_menu.add_checkbutton(label ='Status Bar', onvalue = True, offvalue = False, variable = status_bar_var, compound = LEFT, command = hide_status_bar)
+
+help_menu.add_command(label ='About Us', image = about_us_icon, compound = LEFT, command = aboutus_func)
+
+main_application.config(menu = main_menu)
+
+#----------------------------- End Menu Bar Code -----------------------------
+
